@@ -25,10 +25,10 @@ Exploring and exploiting spatial autocorrelation in our data is an important too
 ## The Assignment
 
 1. Read in the disasters dataset, convert it to points, filter it to those disasters in Idaho, and select any relevant columns. You'll also need to use `tigris::county()` to download a county shapefile for Idaho. Make sure your data are projected correctly
-2. Generate the Riply's K curves for the disaster dataset. What do you think? Is there evidence that the data is spatially autocorrelated?
+2. Generate the Ripley's K curves for the disaster dataset. What do you think? Is there evidence that the data is spatially autocorrelated?
 3. Use the nearest-neighbor approach that we used in class to estimate the lagged values for the disaster dataset and estimate the slope of the line describing Moran's I statistic.
 4. Now use the permutation approach to compare your measured value to one generated from multiple simulations. Generate the plot of the data. Do you see more evidence of spatial autocorrelation?
 5. Generate the 0th, 1st, and 2nd order spatial trend surfaces for the data. Is there evidence for a second order trend? How can you tell?
-6. Now use the spatial trend surface to perform some ordinary krigging. You'll want to have a grid of 15,000 points, fit 3 different experimental variogram functions (see the `vgm` function helpfile to learn more about the shapes available to you). Plot your variogram fits. Which one would you choose? Why?
-7. Using your spatial trend model and your fitted variogram, krig the data and generate a map of the interpolated value and a map of the error.
+6. Now use the spatial trend surface to perform some ordinary kriging. You'll want to have a grid of ~15,000 points, fit 3 different experimental variogram functions (see the `vgm` function helpfile to learn more about the shapes available to you). Plot your variogram fits. Which one would you choose? Why?
+7. Using your spatial trend model and your fitted variogram, krige the data and generate a map of the interpolated value and a map of the error.
 
